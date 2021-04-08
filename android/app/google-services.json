@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "726057571952",
+    "project_id": "blood-bag",
+    "storage_bucket": "blood-bag.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726057571952:android:cdfa534b574b110a2c86b5",
+        "android_client_info": {
+          "package_name": "com.sajith.ukf_blood_bag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726057571952-bh0hb2s5dk5t67elc60qp404f9v97418.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sajith.ukf_blood_bag",
+            "certificate_hash": "6350a2ea68dac973ad0d3efc1bff7d71523f3c8b"
+          }
+        },
+        {
+          "client_id": "726057571952-m49pm17s4hsv7f835612s3alsvs134th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS0COk0zrtv-TfJWGAsHK7YRCDNOIAR6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726057571952-m49pm17s4hsv7f835612s3alsvs134th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
