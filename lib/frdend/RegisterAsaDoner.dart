@@ -18,10 +18,10 @@ class _MyCustomFormState extends State<MyCustomForm> {
     "Thiruvananthapuram",
     "Kollam",
     "Alappuzha",
-    "Pthanamthitta",
+    "Pathanamthitta",
     "Kottayam",
     "Idukki",
-    "Ernakulam",
+    "Ernamkulam",
     "Thrissur",
     "Palakkad",
     "Malappuram",
@@ -54,22 +54,26 @@ class _MyCustomFormState extends State<MyCustomForm> {
       body: ListView(
         children: <Widget>[
           textLayout(
+            disabled: false,
               hint: "Enter Your Name",
               controller: nameController,
               iconData: Icons.person,
               keyboardType: TextInputType.text),
           textLayout(
+              disabled: false,
               hint: "Enter Your Number",
               controller: phoneController,
               iconData: Icons.phone,
               keyboardType: TextInputType.phone),
           textLayout(
+              disabled: false,
               hint: "Enter Your Age",
               controller: ageController,
               iconData: Icons.plus_one,
-              keyboardType: TextInputType.text),
+              keyboardType: TextInputType.number),
           textLayout(
             hint: "Enter Your District",
+            disabled: true,
             controller: districtController,
             iconData: Icons.pin_drop,
             keyboardType: TextInputType.text,
@@ -88,6 +92,7 @@ class _MyCustomFormState extends State<MyCustomForm> {
           ),
           textLayout(
             hint: "Enter Your BloodGroup",
+            disabled: true,
             controller: bloodGroupController,
             iconData: Icons.format_list_bulleted,
             keyboardType: TextInputType.text,
@@ -122,13 +127,13 @@ class _MyCustomFormState extends State<MyCustomForm> {
                     dno = 2;
                   } else if (district == "Alappuzha") {
                     dno = 3;
-                  } else if (district == "Pthanamthitta") {
+                  } else if (district == "Pathanamthitta") {
                     dno = 4;
                   } else if (district == "Kottayam") {
                     dno = 5;
                   } else if (district == "Idukki") {
                     dno = 6;
-                  } else if (district == "Ernakulam") {
+                  } else if (district == "Ernamkulam") {
                     dno = 7;
                   } else if (district == "Thrissur") {
                     dno = 8;
@@ -214,6 +219,7 @@ Widget textLayout(
     final controller,
     final keyboardType,
     final sufixIcon,
+      bool disabled,
     // Color color,
     IconData iconData}) {
   return Container(
@@ -234,7 +240,7 @@ Widget textLayout(
     child: TextField(
       controller: controller,
       keyboardType: keyboardType,
-      enabled: false,
+      readOnly: disabled ,
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.only(

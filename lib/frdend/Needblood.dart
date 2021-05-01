@@ -25,10 +25,10 @@ class _NeedBloodState extends State<NeedBlood> {
     "Thiruvananthapuram",
     "Kollam",
     "Alappuzha",
-    "Pthanamthitta",
+    "Pathanamthitta",
     "Kottayam",
     "Idukki",
-    "Ernakulam",
+    "Ernamkulam",
     "Thrissur",
     "Palakkad",
     "Malappuram",
@@ -105,13 +105,13 @@ class _NeedBloodState extends State<NeedBlood> {
                     dno = 2;
                   } else if (district == "Alappuzha") {
                     dno = 3;
-                  } else if (district == "Pthanamthitta") {
+                  } else if (district == "Pathanamthitta") {
                     dno = 4;
                   } else if (district == "Kottayam") {
                     dno = 5;
                   } else if (district == "Idukki") {
                     dno = 6;
-                  } else if (district == "Ernakulam") {
+                  } else if (district == "Ernamkulam") {
                     dno = 7;
                   } else if (district == "Thrissur") {
                     dno = 8;
@@ -260,6 +260,7 @@ Widget searchLayout(
     child: TextField(
       controller: controller,
       keyboardType: keyboardType,
+      readOnly: true,
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.only(
