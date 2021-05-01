@@ -99,7 +99,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   onTap: (){
-                    _launchInBrowser('https://play.google.com/store/apps/details?id=com.sajith.ukf_blood_bag');
+                    _launchInBrowser('https://play.google.com/store/apps/details?id=com.sajith.ukf_blood_bag ');
                   },
                 ),
               ],
@@ -124,7 +124,7 @@ class HomePage extends StatelessWidget {
                     height: 20,
                   ),
                   buttonFunction(
-                      name: "Register as a doner",
+                      name: "Register as a donor",
                       onpressed: () {
                         Navigator.push(
                             context,

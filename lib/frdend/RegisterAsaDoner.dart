@@ -49,7 +49,7 @@ class _MyCustomFormState extends State<MyCustomForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Register as a doner'),
+        title: Text('Register as a donor'),
       ),
       body: ListView(
         children: <Widget>[
