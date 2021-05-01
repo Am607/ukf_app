@@ -24,17 +24,25 @@ class HomePage extends StatelessWidget {
                 UserAccountsDrawerHeader(
                   accountName: Text("UKF BLOOD BAG"),
                   accountEmail: Text("nss.ukfcet@gmail.com"),
-                  currentAccountPicture: CircleAvatar(
-                    backgroundColor:
-                        Theme.of(context).platform == TargetPlatform.iOS
-                            ? Colors.blue
-                            : Colors.white,
-                    child: Text(
-                      "U",
-                      style: TextStyle(fontSize: 40.0),
+                  currentAccountPicture: Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+
+                            image: DecorationImage(
+                              image: AssetImage(
+                                  "assets/logo.jpeg"
+                              ),
+                              fit: BoxFit.fill,
+                            )
+                          ),
+
+
+
                     ),
+
+
                   ),
-                ),
+
                 ListTile(
                   title: Text(
                     'Home Page',
@@ -59,7 +67,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.black,
                   ),
                   onTap: () {
-                    _launchInBrowser("https://wa.me/9895945776?text=Plz%20tell%20me%20about%20UKF%20Blood%20bag%20app");
+                    _launchInBrowser("https://wa.me/+919895945776?text=Plz%20tell%20me%20about%20UKF%20Blood%20bag%20app");
                   },
                 ),
                 ListTile(
