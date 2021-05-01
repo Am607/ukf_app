@@ -99,7 +99,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   onTap: (){
-                    _launchInBrowser('https://play.google.com/store');
+                    _launchInBrowser('https://play.google.com/store/apps/details?id=com.sajith.ukf_blood_bag');
                   },
                 ),
               ],

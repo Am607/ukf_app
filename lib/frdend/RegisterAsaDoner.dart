@@ -234,6 +234,7 @@ Widget textLayout(
     child: TextField(
       controller: controller,
       keyboardType: keyboardType,
+      enabled: false,
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.only(
